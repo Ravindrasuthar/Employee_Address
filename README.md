@@ -88,7 +88,7 @@ The @DeleteMapping annotation is used for the delete/employee/by/{Id} and delete
     }
 ```
 
-The controller class also has an autowired instance of the UserService interface to handle business logic for the User Management System.
+The controller class also has an autowired instance of the EmployeeService and AddressService interface to handle business logic for the Employee Address.
 
 This implementation demonstrates a basic setup for a REST API controller in Spring Boot, but it can be expanded upon and customized based on specific requirements for the Employee Address.
 
