@@ -97,10 +97,21 @@ _**Services**:_ The services layer contains the business logic of the applicatio
 
 _**Repository:**_ The repository layer is responsible for interacting with the database. It uses Spring Data JPA to perform CRUD (create, read, update, delete) operations on entities.
 
-_**Database:**_ 
+In the application.properties all the text required for connection with MySQL database are written.
+```
+spring.datasource.url=jdbc:mysql://localhost:3306/Emp_DB
+spring.datasource.username=root
+spring.datasource.password=Ravi.067456
+spring.datasource.driverClassName=com.mysql.cj.jdbc.Driver
+spring.jpa.hibernate.ddl-auto=update
+
+spring.jpa.properties.hibernate.show_sql=true
+spring.jpa.properties.hibernate.use_sql_comments=true
+spring.jpa.properties.hibernate.format_sql=true
+```
 
 # Database Structure Used
-I have used ArrayList as DataBase
+I have used MySQL as DataBase
 
 # Project Summary
-In this project i have create different endpoints like and used differet vaalidation for the end ponits
+In this project i have created different endpoints, custom finders and @OneToOne mapping between employee and address model.
