@@ -31,7 +31,7 @@ public class EmployeeController {
         return employeeService.GetEmployeeById(Id);
     }
 
-    @PutMapping("employee/by/id")
+    @PutMapping("employee")
     public String UpdateEmployeeById(@RequestBody EmployeeModel employeeModel)
     {
         return employeeService.UpdateEmployeeById(employeeModel);
